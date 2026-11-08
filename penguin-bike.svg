@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">A penguin riding a bicycle</title>
+  <desc id="desc">Cartoon penguin in a red scarf pedaling a teal bicycle.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eaf7ff"/>
+      <stop offset="70%" stop-color="#f7fcff"/>
+      <stop offset="100%" stop-color="#e3f4e9"/>
+    </linearGradient>
+
+    <g id="wheel">
+      <circle r="88" fill="none" stroke="#23272e" stroke-width="13"/>
+      <circle r="76" fill="none" stroke="#c3ccd6" stroke-width="5"/>
+      <g stroke="#aab4be" stroke-width="4" stroke-linecap="round">
+        <line x1="0" y1="0" x2="76" y2="0"/>
+        <line x1="0" y1="0" x2="53.7" y2="53.7"/>
+        <line x1="0" y1="0" x2="0" y2="76"/>
+        <line x1="0" y1="0" x2="-53.7" y2="53.7"/>
+        <line x1="0" y1="0" x2="-76" y2="0"/>
+        <line x1="0" y1="0" x2="-53.7" y2="-53.7"/>
+        <line x1="0" y1="0" x2="0" y2="-76"/>
+        <line x1="0" y1="0" x2="53.7" y2="-53.7"/>
+      </g>
+      <circle r="11" fill="#6b7580"/>
+      <circle r="4" fill="#e8edf2"/>
+    </g>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <ellipse cx="420" cy="524" rx="290" ry="18" fill="#0d2b3a" opacity="0.10"/>
+  <path d="M0 512 H800" stroke="#c8e6d4" stroke-width="3"/>
+
+  <!-- motion swooshes -->
+  <g stroke="#9ec6d8" stroke-width="7" stroke-linecap="round" opacity="0.75">
+    <path d="M60 300 H150"/>
+    <path d="M40 340 H120"/>
+    <path d="M70 380 H135"/>
+  </g>
+
+  <!-- wheels -->
+  <use href="#wheel" transform="translate(280,420)"/>
+  <use href="#wheel" transform="translate(560,420)"/>
+
+  <!-- frame -->
+  <g fill="none" stroke="#2fae9b" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M280 420 L405 418"/>
+    <path d="M280 420 L342 296"/>
+    <path d="M405 418 L342 296"/>
+    <path d="M405 418 L536 308"/>
+    <path d="M342 296 L536 308"/>
+    <path d="M536 308 L560 420"/>
+  </g>
+  <path d="M527 299 L546 320" fill="none" stroke="#25897a" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- handlebar -->
+  <g fill="none" stroke="#3d444d" stroke-width="11" stroke-linecap="round">
+    <path d="M534 306 L528 276"/>
+    <path d="M528 276 C 550 258 574 268 570 290"/>
+  </g>
+  <circle cx="570" cy="290" r="9" fill="#2b3138"/>
+
+  <!-- saddle -->
+  <path d="M310 292 C 320 277 358 275 368 288 C 358 300 322 303 310 292 Z" fill="#2b3138"/>
+
+  <!-- chainring and pedals -->
+  <circle cx="405" cy="418" r="24" fill="none" stroke="#8d98a4" stroke-width="6"/>
+  <circle cx="405" cy="418" r="9" fill="#5c6672"/>
+  <g stroke="#4c545e" stroke-width="8" stroke-linecap="round">
+    <line x1="405" y1="418" x2="444" y2="441"/>
+    <line x1="405" y1="418" x2="366" y2="395"/>
+  </g>
+  <rect x="427" y="437" width="36" height="11" rx="5" transform="rotate(14 445 442)" fill="#3d444d"/>
+  <rect x="348" y="389" width="36" height="11" rx="5" transform="rotate(14 366 395)" fill="#3d444d"/>
+
+  <!-- penguin -->
+  <g>
+    <!-- tail -->
+    <path d="M300 300 L262 318 L302 326 Z" fill="#1b1f2a"/>
+    <!-- far flipper -->
+    <path d="M330 226 C 300 250 292 278 306 296" fill="none" stroke="#1b1f2a" stroke-width="20" stroke-linecap="round"/>
+
+    <!-- body -->
+    <ellipse cx="350" cy="246" rx="64" ry="80" transform="rotate(-8 350 246)" fill="#1b1f2a"/>
+    <!-- belly -->
+    <ellipse cx="358" cy="256" rx="43" ry="58" transform="rotate(-8 358 256)" fill="#fbfdff"/>
+
+    <!-- scarf -->
+    <path d="M330 196 C 350 210 392 208 406 194 L410 210 C 392 224 348 226 328 212 Z" fill="#e14b4b"/>
+    <path d="M334 210 C 316 224 300 246 288 258 C 302 262 314 254 324 242 C 332 232 338 224 342 218 Z" fill="#c93b3b"/>
+
+    <!-- head -->
+    <circle cx="372" cy="152" r="46" fill="#1b1f2a"/>
+    <!-- face patch -->
+    <ellipse cx="386" cy="158" rx="27" ry="30" fill="#fbfdff"/>
+    <!-- eyes -->
+    <circle cx="378" cy="146" r="7.5" fill="#12151c"/>
+    <circle cx="403" cy="150" r="7.5" fill="#12151c"/>
+    <circle cx="380.5" cy="143.5" r="2.6" fill="#ffffff"/>
+    <circle cx="405.5" cy="147.5" r="2.6" fill="#ffffff"/>
+    <!-- beak -->
+    <path d="M406 160 L452 172 L406 184 Z" fill="#f5a623"/>
+    <path d="M408 172 H446" stroke="#d98c12" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- near flipper reaching for the handlebar -->
+    <path d="M382 222 C 438 236 496 256 528 274" fill="none" stroke="#1b1f2a" stroke-width="26" stroke-linecap="round"/>
+    <path d="M382 222 C 438 236 496 256 528 274" fill="none" stroke="#2c3140" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+    <circle cx="530" cy="275" r="13" fill="#1b1f2a"/>
+
+    <!-- legs -->
+    <g stroke="#f5a623" stroke-width="18" stroke-linecap="round">
+      <path d="M372 314 C 396 340 424 406 442 432"/>
+      <path d="M342 318 C 350 348 358 372 364 390"/>
+    </g>
+    <!-- feet -->
+    <ellipse cx="448" cy="440" rx="20" ry="11" transform="rotate(12 448 440)" fill="#f5a623"/>
+    <ellipse cx="366" cy="393" rx="20" ry="11" transform="rotate(8 366 393)" fill="#e0961a"/>
+  </g>
+</svg>
